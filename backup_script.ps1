@@ -1,6 +1,6 @@
 # PowerShell Backup Script
 # Author: Ivaylo Atanassov
-# Description: This script backs up all files from a source folder to a timestamped destination folder.
+# This script backs up all files from a source folder to a timestamped destination folder.
 # It preserves subfolder structure, logs successes and errors, verifies the copy by comparing file size, and handles duplicate filenames.
 
 
@@ -98,4 +98,5 @@ if (Test-Path $DestinationFile) {
 # Summary
 $SummaryMessage = "BACKUP COMPLETED - Files backed up: $FilesBackedUp, Errors: $BackupErrors"
 "[$(Get-Date)] SUMMARY: $SummaryMessage" | Out-File $LogFile -Append
+
 Write-Host $SummaryMessage
