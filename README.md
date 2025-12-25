@@ -1,7 +1,5 @@
 # PowerShell Backup Script
 
-**Author:** Ivaylo Atanassov  
-
 ## Description  
 PowerShell script that automates backing up all files from a source folder to a timestamped destination folder. The script preserves the original folder and subfolder structure, handles duplicate filenames safely, logs all successes and errors, and performs basic verification by comparing file sizes.
 
